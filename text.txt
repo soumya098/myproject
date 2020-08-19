@@ -1,0 +1,10 @@
+ Volume in drive C is Windows
+ Volume Serial Number is 76B1-1F43
+
+ Directory of C:\Users\soumy\Desktop\NewProject
+
+20-08-2020  01.47 AM    <DIR>          .
+20-08-2020  01.47 AM    <DIR>          ..
+20-08-2020  01.47 AM                 0 text.txt
+               1 File(s)              0 bytes
+               2 Dir(s)  190,566,543,360 bytes free
