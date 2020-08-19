@@ -1,0 +1,29 @@
+header{
+    text-align: center;
+    background-color: rgba(173, 175, 173, 0.712);
+}
+nav{
+    color: rgb(245, 6, 6);
+}
+h1{
+    font-size: 150%;
+    background-color: rgb(29, 192, 192);
+    font-family: arial,"Time New Roman",serif;
+    text-transform: uppercase;
+}
+h2{
+    background-color: rgb(109, 168, 223);
+}
+details{
+    font-style: italic;
+}
+summary{
+    font-style: normal;
+}
+footer{
+    background-color: rgba(173, 175, 173, 0.712);
+   
+}
+a{
+    vertical-align: middle;
+}
