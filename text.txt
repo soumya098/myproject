@@ -1,7 +1,7 @@
  Volume in drive C is Windows
  Volume Serial Number is 76B1-1F43
 
- Directory of C:\Users\soumy\Desktop\NewProject
+ Directory of C:\Users\soumy\Desktop\git-folder
 
 20-08-2020  01.47 AM    <DIR>          .
 20-08-2020  01.47 AM    <DIR>          ..
