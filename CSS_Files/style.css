@@ -1,18 +1,27 @@
+body{
+    background-color: rgb(187, 186, 186);
+   margin: 2%;
+   font-size: 120%;
+}
 header{
     text-align: center;
-    background-color: rgba(173, 175, 173, 0.712);
+    background-color: rgba(24, 187, 236, 0.712);
 }
 nav{
     color: rgb(245, 6, 6);
+    font-size: larger;
 }
 h1{
     font-size: 150%;
-    background-color: rgb(29, 192, 192);
+    color: rgb(255, 255, 255);
     font-family: arial,"Time New Roman",serif;
     text-transform: uppercase;
+    padding: 1%;
 }
 h2{
     background-color: rgb(109, 168, 223);
+    padding: 3%;
+    text-align:center;
 }
 details{
     font-style: italic;
@@ -21,9 +30,20 @@ summary{
     font-style: normal;
 }
 footer{
-    background-color: rgba(173, 175, 173, 0.712);
-   
+    background-color: rgba(97, 163, 224, 0.959);
+   color: rgb(255, 255, 255);
+   clear: both;
 }
 a{
     vertical-align: middle;
+}
+
+section{
+    width: 30%;
+    margin-right: 2%;
+    display: inline-block;
+    float: left;
+}
+img{
+    width: 8%;
 }
