@@ -7,10 +7,6 @@ header{
     text-align: center;
     background-color: rgba(24, 187, 236, 0.712);
 }
-nav{
-    color: rgb(245, 6, 6);
-    font-size: larger;
-}
 h1{
     font-size: 150%;
     color: rgb(255, 255, 255);
@@ -35,7 +31,7 @@ footer{
    clear: both;
 }
 a{
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 section{
@@ -45,5 +41,5 @@ section{
     float: left;
 }
 img{
-    width: 8%;
+    width: 75px;
 }
