@@ -1,5 +1,7 @@
 body{
-    background-color: rgb(187, 186, 186);
+    background-color: rgb(187, 184, 179) ;
+    
+    
    margin: 2%;
    font-size: 120%;
 }
@@ -15,9 +17,16 @@ h1{
     padding: 1%;
 }
 h2{
-    background-color: rgb(109, 168, 223);
+    border: 1px solid transparent;
+    border-radius: 15px;
+    background-color: rgb(64, 173, 224);
+    background: -moz-linear-gradient(top, #b8eaee 0%, #00b7ea 100%);
+	background: -webkit-linear-gradient(#b8eaee 0%, #00b7ea 100%);
+	background: -o-linear-gradient(#b8eaee 0%, #00b7ea 100%);
+	background: linear-gradient(#b8eaee 0%, #00b7ea 100%); 
     padding: 3%;
     text-align:center;
+    overflow:hidden;
 }
 details{
     font-style: italic;
@@ -27,6 +36,7 @@ summary{
 }
 footer{
     background-color: rgba(97, 163, 224, 0.959);
+    padding: 10px;
    color: rgb(255, 255, 255);
    clear: both;
 }
@@ -36,10 +46,17 @@ a{
 
 section{
     width: 30%;
-    margin-right: 2%;
+    margin-left: 2.2%;
     display: inline-block;
-    float: left;
+    vertical-align: top;
+    
 }
 img{
-    width: 75px;
+    width: 70px;
+}
+.divs{
+    overflow:hidden;
+}
+.divs:hover{
+    overflow: visible;
 }
