@@ -1,10 +1,4 @@
-body{
-    background-color: rgb(187, 184, 179) ;
-    
-    
-   margin: 2%;
-   font-size: 120%;
-}
+
 header{
     text-align: center;
     background-color: rgba(24, 187, 236, 0.712);
@@ -59,4 +53,7 @@ img{
 }
 .divs:hover{
     overflow: visible;
+}
+*{
+    font-size: 1.5vw;
 }
