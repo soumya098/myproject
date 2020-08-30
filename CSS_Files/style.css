@@ -9,5 +9,21 @@ img{
 }
 
 .div-margin{
-    margin-bottom:2% ;
+    margin:2% 0% ;
+}
+footer{
+    margin-top: 1%;
+}
+h2{
+    border: cadetblue solid 1px;
+    text-align: center;
+    border-radius: 10px;
+    
+    background-image: -moz-linear-gradient(top, #f05656 10%, #00b7ea 10%),url(../image1.jpg);
+	background-image: -webkit-linear-gradient(#f05656 10%, #00b7ea 10%),url(../image1.jpg);
+	background-image: -o-linear-gradient(#f05656 10%, #00b7ea 10%),url(../image1.jpg);
+    background-image: linear-gradient(to top,#abe6f79a,#dab3b3b9),url(../image1.jpg);
+    color: aliceblue; 
+    background-size: cover;
+   
 }
