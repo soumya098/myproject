@@ -6,16 +6,19 @@
     <title>myproject</title>
     <link rel="stylesheet" href="CSS_Files/style.css">
     <link rel="stylesheet" href="CSS_Files/linkstyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 </head>
 <body>
-   <header>
-        <h1>Soumya Ranjan Nayak </h1>
-        <nav>
-        <a href="https://www.google.com/">one</a> <a href="">two</a> 
-        <a href="">three</a> <a href="">four</a>
+   <header class="jumbotron text-center">
+        <h1 class="col-md-12">Soumya Ranjan Nayak </h1>
+        <nav >
+        <a href="https://www.google.com/" class="col-md-4">one</a> <a href="" class="col-md-4">two</a> 
+        <a href="" class="col-md-4">three</a> <a href="" class="col-md-4">four</a>
         </nav>
     </header>
-    <section> 
+    <div class="container">
+        <div class="row">
+    <div class="col-12 col-md-4"> 
         <h2>Favorite Foods</h2>
         <ol>
             <li>cakes</li>
@@ -23,30 +26,36 @@
             <li>chicken</li>
             <li>fish</li>
         </ol>
-    </section>
+    </div>
    
-    <section>
+    <div class="col-12 col-md-4">
         <h2>Achievements</h2>
-        <div class="divs">
+        <div >
     <span>Progress in this course (100%)</span> <progress min="0" max="100" value="100"></progress><br/>
     <span>Progress in the Specialization capstone (20%)</span> <progress min="0" max="100" value="20"></progress><br/>
     <span>Progress in life goals (40%)</span> <progress min="0" max="100" value="40"></progress>
     </div>
-</section>
+    </div>
     
-    <section>
+    <div class="col-12 col-md-4">
     <h2>More about me</h2>
     <details open>
        <summary> my childhood</summary>
        <p style="margin: 0vw;">I'm from konark but currently living in Bhubaneswar.</p>
     </details>
-    </section>
+    </div>
+</div>
+</div>
    
 
     <footer>
         <a href="http://www.intro-webdesign.com/images/newlogo.png" target="blank"><img src="http://www.intro-webdesign.com/images/newlogo.png" alt="logo of intro-webdesign"></a>
         This page was created by Soumya Ranjan Nayak &amp; Colleen van Lent.To learn more about web design, visit <a href=" http://www.intro-webdesign.com." target="blank">Intro to Web Design</a> .
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
 </html>
