@@ -7,3 +7,19 @@
     font-weight: 500;
     text-decoration: none;
   }
+  .jumbotron{
+    background-color: azure;
+  }
+  .navbar{
+    background-color: rgb(76, 201, 233);
+  }
+  .btn{
+    color:rgb(255, 255, 255);
+  }
+  .btn-outline-success{
+    border-color: black;
+  }
+  .btn:hover{
+    background-color: rgb(50, 125, 223);
+    border-color: rgb(50, 125, 223) ;
+  }
