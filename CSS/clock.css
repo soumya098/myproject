@@ -1,5 +1,9 @@
-#time-display{
-    font-size: 80%;
-    font-style: italic;
-    font-weight: 400;
+
+  .display-5{
+    font-weight: lighter;
+  }
+  #time-display{
+    font-size: 60%;
+    font-weight: 500;
+    text-decoration: none;
   }
