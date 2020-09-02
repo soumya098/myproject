@@ -1,0 +1,14 @@
+.navbar{
+    background-color: rgb(175, 239, 255);
+  }
+  .btn{
+    color:rgb(255, 255, 255);
+   background-color:rgba(36, 141, 226, 0.836) ;
+  }
+  .btn-outline-success{
+    border-color: black;
+  }
+  .btn:hover{
+    background-color: rgb(25, 95, 187);
+    border-color: rgb(25, 95, 187) ;
+  }
