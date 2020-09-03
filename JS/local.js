@@ -17,7 +17,7 @@ function add() {
     var tit = document.getElementById("title").value;
     var desc = document.getElementById("description").value;
 
-    if (localStorage.getItem('itemsjson') == null) {
+    if (localStorage.getItem("itemsjson") == null) {
         itemsjsonarr = [];
         itemsjsonarr.push([tit, desc]);
         localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
@@ -52,8 +52,7 @@ function update() {
         <td>${element[0]}</td>
         <td>${element[1]}</td>
         <td class="text-center"><button class="btn btn-primary" onclick="clicked(${index})" >Delete</button></td>
-        </tr>
-        `;
+        </tr>`;
     });
     document.getElementById("tb").innerHTML = str;
 }

@@ -1,0 +1,27 @@
+.row-container{
+    display: flex; 
+    margin: 0px auto;
+    padding: 20px 30px;
+    justify-content: space-around ;
+    flex-direction: row;
+    flex-wrap: wrap;
+       
+}
+.container{
+    margin-top: 0px;
+    background-color:rgb(162, 85, 235);
+    color: floralwhite;
+    padding:30px 10px 10px;
+    width: 75%;
+}
+.box-1{
+    border: floralwhite 2px ridge;
+}
+.row-container div{
+    display: flex; 
+    justify-content: space-around ;
+    padding: 10px;
+    align-content: center;
+    align-items: center;
+       
+}
