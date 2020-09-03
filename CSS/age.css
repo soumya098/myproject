@@ -1,27 +1,48 @@
 .row-container{
-    display: flex; 
+    display: flex;
+    width: 80%; 
     margin: 0px auto;
-    padding: 20px 30px;
+    padding: 10px 10px;
     justify-content: space-around ;
     flex-direction: row;
     flex-wrap: wrap;
        
 }
 .container{
-    margin-top: 0px;
-    background-color:rgb(162, 85, 235);
+    margin-top: 0 auto;
+    background-color:rgb(132, 33, 224);
     color: floralwhite;
-    padding:30px 10px 10px;
-    width: 75%;
+    padding:0px 10px 10px;
 }
 .box-1{
     border: floralwhite 2px ridge;
 }
 .row-container div{
     display: flex; 
+    padding: 5px;
     justify-content: space-around ;
-    padding: 10px;
     align-content: center;
     align-items: center;
        
+}
+hr{
+    display: flex;
+    width: 75%;
+    margin:5px auto;
+    
+}
+.btn-1{
+    color: blanchedalmond;
+    background-color: rgb(35, 209, 0);
+}
+.btn-1:hover{
+    color:blanchedalmond;
+    background-color:rgb(22, 133, 0);
+}
+.row-container img{
+    border: cornsilk ridge 2px;
+    width: 20%;
+    height:auto;
+    margin: 10px 10px;
+    box-shadow: 0px 10px 50px rgb(33, 1, 59);
 }
