@@ -47,7 +47,8 @@
         <div class="row-container" id="catbox">
         </div>
     </div>
-    <hr/>
+
+    <hr />
 
     <div class="container">
         <div class="row-container">
@@ -55,7 +56,7 @@
         </div>
         <div class="rps">
             <div class="game">
-                <img src="rock.png" alt="" id="rock"  onclick="rpsgame(this)">
+                <img src="rock.png" alt="" id="rock" onclick="rpsgame(this)">
             </div>
             <div class="game">
                 <img src="paper.jpg" alt="" id="paper" onclick="rpsgame(this)">
@@ -67,6 +68,29 @@
             </div>
         </div>
     </div>
+
+    <hr />
+
+    <div class="container">
+        <div class="row-container">
+            <h3>Button Color Changer</h3>
+        </div>
+        <div  class="row row-container align-items-center">
+            <form action="">
+                <select name="dropdown" id="choices" onchange="BtnColorChanger(this)">
+                    <option value="random">RANDOM</option>
+                    <option value="red">RED</option>
+                    <option value="green">GREEN</option>
+                    <option value="reset">RESET</option>
+                </select>
+            </form>
+            <button class="btn btn-primary">Button1</button>
+            <button class="btn btn-danger">Button2</button>
+            <button class="btn btn-warning">Button3</button>
+        </div>
+
+    </div>
+
 
 
     <script src="JS/age.js"></script>

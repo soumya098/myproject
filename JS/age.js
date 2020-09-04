@@ -1,5 +1,3 @@
-
-
 function ageindays() {
     var birth_yr = prompt("Enter the year you were born");
     var result = (2020 - birth_yr) * 365;
@@ -9,11 +7,11 @@ function ageindays() {
     h3.appendChild(ans);
     document.getElementById("result").appendChild(h3);
 }
-
 function reset() {
     document.getElementById("ageindays").remove();
 }
 
+//cat-generatror-->>
 
 function generator() {
     var img = document.createElement("img");
@@ -22,23 +20,23 @@ function generator() {
     div.appendChild(img);
 }
 
+
 //rps game-->>
 
 function rpsgame(yourchoice) {
     var humanchoice, botchoice;
     humanchoice = yourchoice.id;
-    botchoice = numtochoice(randomnum());
+    botchoice = numtochoice(randomnum(3));
     console.log("you-choose: " + humanchoice, "\nbot-choose: " + botchoice);
 
     var result = decideWinner(humanchoice, botchoice);
     var Message = finalMessage(result[0]);
     console.log(Message);
     frontend(humanchoice, botchoice, Message);
-
 }
 
-function randomnum() {
-    return Math.floor(Math.random() * 3);
+function randomnum(x) {
+    return Math.floor(Math.random() * x);
 }
 function numtochoice(number) {
     return ["rock", "paper", "scissor"][number];
@@ -65,7 +63,6 @@ function finalMessage(yourscore) {
     else {
         return { "msg": "You Tied", "color": "yellow" };
     }
-
 }
 
 function frontend(yourchoice, botchoice, Message) {
@@ -86,7 +83,6 @@ function frontend(yourchoice, botchoice, Message) {
     img2.src = imgdbs[botchoice];
     img2.setAttribute("id", "botchoice");
 
-
     let h4 = document.createElement("h4");
     let text = document.createTextNode(Message["msg"]);
     h4.setAttribute("id", Message["color"]);
@@ -98,8 +94,63 @@ function frontend(yourchoice, botchoice, Message) {
     divarr[2].appendChild(img2);
 
     setTimeout(() => { document.location.reload(true); }, 1500);
+}
 
+//btn color change-->>
 
+let All_Btns = document.getElementsByTagName("button");
+console.log(All_Btns);
+
+var ColorArr = [];
+for (let i = 0; i < All_Btns.length; i++) {
+    ColorArr.push(All_Btns[i].classList[1]);
+}
+console.log(ColorArr);
+
+function BtnColorChanger(colorchoosed) {
+    let choosed = colorchoosed.value;
+    console.log(choosed);
+    if (choosed === "red") {
+        all_red();
+    }
+    if (choosed === "green") {
+        all_green();
+    }
+    if (choosed === "reset") {
+        original_color();
+    }
+    if (choosed === "random") {
+        random_color();
+    }
+}
+
+function all_red() {
+    for (let i = 0; i < All_Btns.length; i++) {
+        All_Btns[i].classList.remove(All_Btns[i].classList[1]);
+        All_Btns[i].classList.add("btn-danger");
+    }
+}
+
+function all_green() {
+    for (let i = 0; i < All_Btns.length; i++) {
+        All_Btns[i].classList.remove(All_Btns[i].classList[1]);
+        All_Btns[i].classList.add("btn-success");
+    }
+}
+
+function random_color() {
+    for (let i = 0; i < All_Btns.length; i++) {
+        let randnum = randomnum(4);
+        All_Btns[i].classList.remove(All_Btns[i].classList[1]);
+        All_Btns[i].classList.add(ColorArr[randnum+2]);
+    }
+
+}
+function original_color() {
+    for (let i = 0; i < All_Btns.length; i++) {
+        All_Btns[i].classList.remove(All_Btns[i].classList[1]);
+        All_Btns[i].classList.add(ColorArr[i]);
+    }
 
 }
 
