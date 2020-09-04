@@ -29,15 +29,6 @@ hr{
     display: flex;
     width: 75%;
     margin:5px auto;
-    
-}
-.btn-1{
-    color: blanchedalmond;
-    background-color: rgb(35, 209, 0);
-}
-.btn-1:hover{
-    color:blanchedalmond;
-    background-color:rgb(22, 133, 0);
 }
 .row-container img{
     border: cornsilk ridge 2px;
@@ -54,8 +45,6 @@ hr{
     flex-direction: row;
     flex-wrap: wrap;
     border: floralwhite 1px ridge;
-
-
 }
 .rps .game{
     display: flex; 
@@ -64,6 +53,7 @@ hr{
     justify-content: space-around ;
     align-content: center;
     align-items: center;
+    text-align: center;
 }
 .rps .game img{
     width:90%;

@@ -57,7 +57,7 @@ function decideWinner(yours, comps) {
 
 function finalMessage(yourscore) {
     if (yourscore === 0) {
-        return { "msg": "you Lost", "color": "red" };
+        return { "msg": "You Lost", "color": "red" };
     }
     else if (yourscore === 1) {
         return { "msg": "You Won", "color": "green" };
@@ -87,14 +87,14 @@ function frontend(yourchoice, botchoice, Message) {
     img2.setAttribute("id", "botchoice");
 
 
-    let h5 = document.createElement("h5");
+    let h4 = document.createElement("h4");
     let text = document.createTextNode(Message["msg"]);
-    h5.setAttribute("id", Message["color"]);
-    h5.appendChild(text);
+    h4.setAttribute("id", Message["color"]);
+    h4.appendChild(text);
 
     var divarr = document.getElementsByClassName("game");
     divarr[0].appendChild(img1);
-    divarr[1].appendChild(h5);
+    divarr[1].appendChild(h4);
     divarr[2].appendChild(img2);
 
     setTimeout(() => { document.location.reload(true); }, 1500);
