@@ -97,7 +97,7 @@ function frontend(yourchoice, botchoice, Message) {
     divarr[1].appendChild(h5);
     divarr[2].appendChild(img2);
 
-    setTimeout(()=>{document.location.reload(true);},1000);
+    setTimeout(()=>{document.location.reload(true);},5000);
 
 
 
