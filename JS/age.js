@@ -18,7 +18,7 @@ function reset() {
 function generator() {
     var img = document.createElement("img");
     var div = document.getElementById("catbox");
-    img.setAttribute("src", "../cat3.gif");
+    img.setAttribute("src", "cat3.gif");
     div.appendChild(img);
 }
 
@@ -70,9 +70,9 @@ function finalMessage(yourscore) {
 
 function frontend(yourchoice, botchoice, Message) {
     var imgdbs = {
-        "rock": "../rock.png",
-        "paper": "../paper.jpg",
-        "scissor": "../scissor.png",
+        "rock": "rock.png",
+        "paper": "paper.jpg",
+        "scissor": "scissor.png",
     }
     document.getElementById("paper").remove();
     document.getElementById("rock").remove();
@@ -80,11 +80,11 @@ function frontend(yourchoice, botchoice, Message) {
 
     let img1 = document.createElement("img");
     img1.src = imgdbs[yourchoice];
-    img1.setAttribute("id","yourchoice");
+    img1.setAttribute("id", "yourchoice");
 
     let img2 = document.createElement("img");
     img2.src = imgdbs[botchoice];
-    img2.setAttribute("id","botchoice");
+    img2.setAttribute("id", "botchoice");
 
 
     let h5 = document.createElement("h5");
@@ -97,7 +97,7 @@ function frontend(yourchoice, botchoice, Message) {
     divarr[1].appendChild(h5);
     divarr[2].appendChild(img2);
 
-   // setTimeout(()=>{document.location.reload(true);},5000);
+    // setTimeout(()=>{document.location.reload(true);},5000);
 
 
 
