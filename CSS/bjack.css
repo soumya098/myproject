@@ -1,0 +1,44 @@
+.container-1{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    padding: 8px;
+    background-color: rgb(10, 54, 4);
+    margin: 0px auto;
+    text-align: center;
+    border: 2px double rgb(3, 26, 0);
+}
+body{
+    background-color: rgb(231, 180, 177);
+}
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 10px auto;
+}
+.your-box, .dealer-box{
+    flex: 1;
+    height: 375px;
+    border:1px solid rgb(8, 8, 8);
+    padding: 10px;
+}
+
+.row-2, .row-3{
+    display:flex;
+    flex-wrap: wrap;
+    margin: 5px auto;
+    padding: 5px;
+    justify-content:space-around;
+}
+.row-2 div{
+    border: 1px ridge black;
+    padding: 10px;
+}
+.btn{
+    margin: 5px;
+}
+.tb-style, th,td{
+    padding: 5px 5px;
+    border: 1px solid black;
+    
+}

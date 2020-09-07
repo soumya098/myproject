@@ -16,7 +16,7 @@ function reset() {
 function generator() {
     var img = document.createElement("img");
     var div = document.getElementById("catbox");
-    img.setAttribute("src", "cat3.gif");
+    img.setAttribute("src", "images/cat3.gif");
     div.appendChild(img);
 }
 
@@ -67,9 +67,9 @@ function finalMessage(yourscore) {
 
 function frontend(yourchoice, botchoice, Message) {
     var imgdbs = {
-        "rock": "rock.png",
-        "paper": "paper.jpg",
-        "scissor": "scissor.png",
+        "rock": "images/rock.png",
+        "paper": "images/paper.jpg",
+        "scissor": "images/scissor.png",
     }
     document.getElementById("paper").remove();
     document.getElementById("rock").remove();
