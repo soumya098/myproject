@@ -101,7 +101,7 @@ function sleep(ms) {
     return new Promise(s => setTimeout(s, ms));
 }
 
-function StandLogic() {
+async function StandLogic() {
     BlackJackGame.isStand = true;
     while (dealer.score < 16 && BlackJackGame.isStand === true) {
         let card = Randomcard();
