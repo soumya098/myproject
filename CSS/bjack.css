@@ -21,8 +21,8 @@
     height: 400px;
 }
 .flex-container div img{
-    width: 21%;
-    height: 43%;
+    width: 25%;
+    height: 40%;
     padding: 10px;
 }
 
@@ -47,7 +47,7 @@
     
 }
 
-@media only screen and (max-width:576px){
+@media only screen and (max-width:748px){
     .flex-container div img{
         width: 33%;
         height: auto;

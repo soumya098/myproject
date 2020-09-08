@@ -105,7 +105,6 @@ var ColorArr = [];
 for (let i = 0; i < All_Btns.length; i++) {
     ColorArr.push(All_Btns[i].classList[1]);
 }
-console.log(ColorArr);
 
 function BtnColorChanger(colorchoosed) {
     let choosed = colorchoosed.value;
@@ -130,14 +129,12 @@ function all_red() {
         All_Btns[i].classList.add("btn-danger");
     }
 }
-
 function all_green() {
     for (let i = 0; i < All_Btns.length; i++) {
         All_Btns[i].classList.remove(All_Btns[i].classList[1]);
         All_Btns[i].classList.add("btn-success");
     }
 }
-
 function random_color() {
     for (let i = 0; i < All_Btns.length; i++) {
         let randnum = randomnum(4);
