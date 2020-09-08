@@ -97,8 +97,11 @@ document.querySelector("#hit").addEventListener("click", Btn_Hit);
 document.querySelector("#deal").addEventListener("click", Btn_Deal);
 document.querySelector("#stand").addEventListener("click", StandLogic);
 
+function sleep(ms) {
+    return new Promise(s => setTimeout(s, ms));
+}
 
-async function StandLogic() {
+function StandLogic() {
     BlackJackGame.isStand = true;
     while (dealer.score < 16 && BlackJackGame.isStand === true) {
         let card = Randomcard();
@@ -169,8 +172,4 @@ function ShowWinner(winner) {
         document.querySelector("#losses").textContent = BlackJackGame.loss;
         document.querySelector("#draws").textContent = BlackJackGame.draw;
     }
-}
-
-function sleep(ms) {
-    return new Promise(s => setTimeout(s, ms));
 }
