@@ -21,7 +21,7 @@ function generator() {
 }
 
 
-//rps game-->>
+//rock-paper-scissor game-->>
 
 function rpsgame(yourchoice) {
     var humanchoice, botchoice;
