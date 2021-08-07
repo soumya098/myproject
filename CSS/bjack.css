@@ -1,63 +1,64 @@
-.container-1{
-    width: 100%;
-    color: rgb(255, 255, 255);
-    padding: 8px;
-    background-color: rgb(10, 54, 4);
-    margin: 0px auto;
+.container-1 {
+  width: 100%;
+  color: rgb(255, 255, 255);
+  padding: 8px;
+  background-color: rgb(16, 89, 7);
+  margin: 0px auto;
+  text-align: center;
+  border: 2px double rgb(3, 26, 0);
+}
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 10px auto;
+}
+.flex-container div {
+  border: 1px solid rgb(8, 8, 8);
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 400px;
+}
+.flex-container div img {
+  width: 25%;
+  height: 42%;
+  padding: 10px;
+}
+
+.row-2,
+.row-3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 5px auto;
+  padding: 5px;
+  justify-content: space-around;
+}
+.row-2 div {
+  border: 1px ridge black;
+  padding: 10px;
+}
+.btn {
+  margin: 5px;
+}
+.tb-style,
+th,
+td {
+  padding: 5px 5px;
+  border: 1px solid black;
+}
+
+@media only screen and (max-width: 748px) {
+  .flex-container div img {
+    width: 33%;
+    height: auto;
+    padding: 10px;
+  }
+  .flex-container div {
+    border: 1px solid rgb(8, 8, 8);
+    padding: 10px;
+    flex: 1;
     text-align: center;
-    border: 2px double rgb(3, 26, 0);
-}
-.flex-container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    margin: 10px auto;
-}
-.flex-container div{
-    border:1px solid rgb(8, 8, 8);
-    padding: 10px;
-    flex:1;
-    text-align: center;
-    height: 400px;
-}
-.flex-container div img{
-    width: 25%;
-    height: 42%;
-    padding: 10px;
-}
-
-
-.row-2, .row-3{
-    display:flex;
-    flex-wrap: wrap;
-    margin: 5px auto;
-    padding: 5px;
-    justify-content:space-around;
-}
-.row-2 div{
-    border: 1px ridge black;
-    padding: 10px;
-}
-.btn{
-    margin: 5px;
-}
-.tb-style, th,td{
-    padding: 5px 5px;
-    border: 1px solid black;
-    
-}
-
-@media only screen and (max-width:748px){
-    .flex-container div img{
-        width: 33%;
-        height: auto;
-        padding: 10px;
-    }
-    .flex-container div{
-        border:1px solid rgb(8, 8, 8);
-        padding: 10px;
-        flex:1;
-        text-align: center;
-        height: 275px;
-    }
+    height: 275px;
+  }
 }

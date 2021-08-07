@@ -37,7 +37,7 @@
 
     <div class="container my-4">
         <h2 class="row justify-content-center ">TO-DOs List</h2>
-        <form>
+        <form id="form">
             <div class="form-group">
                 <label for="title">Title</label>
                 <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
@@ -48,7 +48,7 @@
                 <textarea name="" id="description" class="form-control" rows="3"></textarea>
             </div>
         </form>
-        <button class="btn btn-primary" id="add">ADD to List</button>
+        <button class="btn btn-primary" id="add" >ADD to List</button>
         <div class="items">
             <h3>your items</h3>
             <table class="table table-striped table-bordered">
@@ -83,6 +83,22 @@
         integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
         crossorigin="anonymous"></script>
     <script src="JS/local.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#add').attr('disabled',true);
+            $('#title').keyup(function(){
+                if($(this).val().length !=0){
+                    $('#add').attr('disabled', false);
+                }
+                else{
+                    $('#add').attr('disabled', true);
+                }
+            });
+            $('#add').click(function(){
+               $('#form')[0].reset();
+            })
+        });
+    </script>
 </body>
 
 </html>

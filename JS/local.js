@@ -13,63 +13,57 @@ console.log(typeof tojson);
 
 var a = document.getElementById("add");
 function add() {
-    console.log("adding to list....");
-    var tit = document.getElementById("title").value;
-    var desc = document.getElementById("description").value;
+  console.log("adding to list....");
+  var tit = document.getElementById("title").value;
+  var desc = document.getElementById("description").value;
 
-    if (localStorage.getItem("itemsjson") == null) {
-        itemsjsonarr = [];
-        itemsjsonarr.push([tit, desc]);
-        localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
-    }
-    else {
-        itemsjsonarrstr = localStorage.getItem("itemsjson");
-        itemsjsonarr = JSON.parse(itemsjsonarrstr);
-        itemsjsonarr.push([tit, desc]);
-        localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
-    }
-    update();
+  if (localStorage.getItem("itemsjson") == null) {
+    itemsjsonarr = [];
+    itemsjsonarr.push({ title: tit, description: desc });
+    localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
+  } else {
+    itemsjsonarrstr = localStorage.getItem("itemsjson");
+    itemsjsonarr = JSON.parse(itemsjsonarrstr);
+    itemsjsonarr.push({ title: tit, description: desc });
+    localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
+  }
+  update();
 }
 
 function update() {
-    console.log("updating list....");
-    if (localStorage.getItem('itemsjson') == null) {
-        itemsjsonarr = [];
-        localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
-    }
-    else {
-        itemsjsonarrstr = localStorage.getItem("itemsjson");
-        itemsjsonarr = JSON.parse(itemsjsonarrstr);
-    }
+  console.log("updating list....");
+  if (localStorage.getItem("itemsjson") == null) {
+    itemsjsonarr = [];
+    localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
+  } else {
+    itemsjsonarrstr = localStorage.getItem("itemsjson");
+    itemsjsonarr = JSON.parse(itemsjsonarrstr);
+  }
 
-    //populate the table
-    let tableBody = document.getElementById("tb");
-    let str = "";
-    itemsjsonarr.forEach((element, index) => {
-        str += `
+  //populate the table
+  let tableBody = document.getElementById("tb");
+  let str = "";
+  itemsjsonarr.forEach((element, index) => {
+    str += `
         <tr>
         <th>${index + 1}</th>
-        <td>${element[0]}</td>
-        <td>${element[1]}</td>
+        <td>${element.title}</td>
+        <td>${element.description}</td>
         <td class="text-center"><button class="btn btn-primary" onclick="clicked(${index})" >Delete</button></td>
         </tr>`;
-    });
-    document.getElementById("tb").innerHTML = str;
+  });
+  document.getElementById("tb").innerHTML = str;
 }
 
 function clicked(itemindex) {
-    let x=itemindex
-    console.log("deleting", x+1);
-    itemsjsonarrstr = localStorage.getItem("itemsjson");
-    itemsjsonarr = JSON.parse(itemsjsonarrstr);
-    itemsjsonarr.splice(itemindex, 1);
-    localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
-    update();
+  let x = itemindex;
+  console.log("deleting", x + 1);
+  itemsjsonarrstr = localStorage.getItem("itemsjson");
+  itemsjsonarr = JSON.parse(itemsjsonarrstr);
+  itemsjsonarr.splice(itemindex, 1);
+  localStorage.setItem("itemsjson", JSON.stringify(itemsjsonarr));
+  update();
 }
 
 a.addEventListener("click", add);
 update();
-
-
-
-
